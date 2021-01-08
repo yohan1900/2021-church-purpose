@@ -236,6 +236,8 @@ p {
   font-size: var(--font-micro);
 }
 
+/* 표 관련 */
+
 table, th, td {
   border:1px solid slategray;
 }
@@ -244,10 +246,14 @@ table {
   height:100%;
 }
 
+.step_name {
+  text-align: left;
+}
+
 .ul1 {
   list-style:none;
   padding-right:30px;
-  text-align:right;
+  text-align:center;
   background-color:var(--color-green);
   color:white;
   line-height:25px;
@@ -258,7 +264,7 @@ table {
 .ul2 {
   list-style:none;
   padding-right:30px;
-  text-align:right;
+  text-align:center;
   background-color:var(--color-pink);
   color:white;
   line-height:25px;
@@ -266,19 +272,33 @@ table {
   margin-bottom:10px;
 }
 
-.fa-male {
-  margin: auto;
-  color: var(--color-blue);
+.ul3 {
+  list-style:none;
+  padding-right:30px;
+  text-align:center;
+  background-color:var(--color-blue);
+  color:white;
+  line-height:25px;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
-.fa-male {
+.fa-male, .fa-female {
+  margin: auto;
+  color: var(--color-white);
+}
+
+.fa-male, .fa-female {
   transition: var(--animation-duration);
 }
-/* 에니메이션은 300~350밀리세컨을 사용하는 것이 관계임, 이게 거의 정형화된 세컨드임, 여기서 과해도 보기 안좋고
-덜해도 좀 급작스럽다고 함. */
 
 .fa-male:hover{
-  color: var(--color-pink);
+  color: var(--color-green);
+  transform: rotate(-30deg); scale(2.5);
+}  
+
+.fa-female:hover{
+  color: var(--color-green);
   transform: rotate(-30deg); scale(2.5);
 }  
 /* 여기 위에다가 호버 해놓고 i 붙인것은 아이콘 요소중에 i를 가지고 있는
