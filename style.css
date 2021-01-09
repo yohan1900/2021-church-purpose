@@ -197,10 +197,6 @@ p {
 }
 
 /* About */
-#about {
-  background-color: var(--color-white);
-}
-
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -255,7 +251,7 @@ table {
 }
 
 .step_name {
-  text-align: left;
+  text-align: center;
 }
 
 .ul1 {
@@ -369,7 +365,7 @@ table {
 /* skill */
 
 #skills {
-  background-color: #407ba5;
+  background-color: var(--color-yellow);
 }
 
 .skillset {
