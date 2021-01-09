@@ -147,10 +147,14 @@ p {
 
 /* Home */
 #home {
-  background: url(image/home-background.png) center/cover no-repeat;
+  background: url(image/sunset.jpg) center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
+}
+
+.front-logo {
+  visibility: hidden;
 }
 
 .home__avarta {
@@ -162,7 +166,7 @@ p {
 
 .home__title,
 .home__description {
-  color: var(--color-green);
+  color: var(--color-white);
 }
 
 .home__contact {
