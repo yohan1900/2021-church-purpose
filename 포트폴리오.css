@@ -14,7 +14,6 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-green: #5fb8b4;
 
   /* Font size */
   --font-large: 48px;
@@ -112,7 +111,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-green);
+  background-color: var(--color-pink);
   padding: 8px;
 }
 .navbar__menu {
@@ -157,27 +156,26 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  /* border: 2px var(--color-light-white) solid; */
+  border: 2px var(--color-light-white) solid;
 }
 
 .home__title,
 .home__description {
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 
 .home__contact {
-  color: var(--color-white);
+  color: var(--color-light-grey);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  background-color: var(--color-blue);
-  /* border: 1px solid var(--color-blue); */
+  border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
 .home__contact:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-yellow);
 }
 
 /* section commom */
@@ -199,6 +197,30 @@ p {
   margin: 80px 0;
 }
 
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: var(--animation-duration);
+}
+/* 에니메이션은 300~350밀리세컨을 사용하는 것이 관계임, 이게 거의 정형화된 세컨드임, 여기서 과해도 보기 안좋고
+덜해도 좀 급작스럽다고 함. */
+
+.major__icon:hover i{
+  color: var(--color-pink);
+  transform: rotate(-30deg); scale(2.5);
+}  
+/* 여기 위에다가 호버 해놓고 i 붙인것은 아이콘 요소중에 i를 가지고 있는
+애들만 호버를 적용하기 위해서이다. */
 
 .major__title,
 .major__description {
@@ -236,128 +258,6 @@ p {
   font-size: var(--font-micro);
 }
 
-/* 표 관련 */
-
-table, th, td {
-  border:1px solid slategray;
-}
-table {
-  width:100%;
-  height:100%;
-}
-
-.step_name {
-  text-align: center;
-}
-
-.ul1 {
-  list-style:none;
-  padding-right:30px;
-  text-align:center;
-  background-color:var(--color-green);
-  color:white;
-  line-height:25px;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-.ul2 {
-  list-style:none;
-  padding-right:30px;
-  text-align:center;
-  background-color:var(--color-pink);
-  color:white;
-  line-height:25px;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-.ul3 {
-  list-style:none;
-  padding-right:30px;
-  text-align:center;
-  background-color:var(--color-blue);
-  color:white;
-  line-height:25px;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-.fa-male, .fa-female {
-  margin: auto;
-  color: var(--color-white);
-}
-
-.fa-male, .fa-female {
-  transition: var(--animation-duration);
-}
-
-.fa-male:hover{
-  color: var(--color-green);
-  transform: rotate(-30deg); scale(2.5);
-}  
-
-.fa-female:hover{
-  color: var(--color-green);
-  transform: rotate(-30deg); scale(2.5);
-}  
-/* 여기 위에다가 호버 해놓고 i 붙인것은 아이콘 요소중에 i를 가지고 있는
-애들만 호버를 적용하기 위해서이다. */
-
-
-
-.major__icon {
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
-  font-size: 70px;
-  margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
-  border-radius: 50%;
-  margin-bottom: 16px;
-}
-
-.major__icon i {
-  transition: var(--animation-duration);
-}
-/* 에니메이션은 300~350밀리세컨을 사용하는 것이 관계임, 이게 거의 정형화된 세컨드임, 여기서 과해도 보기 안좋고
-덜해도 좀 급작스럽다고 함. */
-
-.major__icon:hover i{
-  color: var(--color-pink);
-  transform: rotate(-30deg); scale(2.5);
-}  
-/* 여기 위에다가 호버 해놓고 i 붙인것은 아이콘 요소중에 i를 가지고 있는
-애들만 호버를 적용하기 위해서이다. */
-
-
-.major__icon1 {
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
-  font-size: 70px;
-  margin: auto;
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-  border-radius: 50%;
-  margin-bottom: 16px;
-}
-
-.major__icon1 i {
-  transition: var(--animation-duration);
-}
-/* 에니메이션은 300~350밀리세컨을 사용하는 것이 관계임, 이게 거의 정형화된 세컨드임, 여기서 과해도 보기 안좋고
-덜해도 좀 급작스럽다고 함. */
-
-.major__icon1:hover i{
-  color: var(--color-pink);
-  transform: rotate(-30deg); scale(2.5);
-}  
-/* 여기 위에다가 호버 해놓고 i 붙인것은 아이콘 요소중에 i를 가지고 있는
-애들만 호버를 적용하기 위해서이다. */
-
-
 /* skill */
 
 #skills {
@@ -366,8 +266,8 @@ table {
 
 .skillset {
   display: flex;
-  background-color: none;
-  color: var(--color-white);
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
   margin: 20px 0;
 }
 
@@ -376,16 +276,13 @@ table {
 }
 
 .skillset__left {
-  flex-basis: 100%;
+  flex-basis: 60%;
   background-color: var(--color-dark-grey);
-  color: var(--color-white);
   padding: 20px 40px;
-  opacity: 0.9;
 }
 
 .skill {
   margin-bottom: 45px;
-  text-align: left;
 }
 
 .skill__description {
@@ -405,12 +302,12 @@ table {
   background-color: var(--color-orange);
 }
 
-/* .skillset__right {
+.skillset__right {
   flex-basis: 40%;
-} */
+}
 
 .tools {
-  background-color: var(--color-white);
+  background-color: var(--color-grey);
 }
 
 .tools, 
@@ -418,11 +315,7 @@ table {
   padding: 20px;
 }
 
-/* 암송말씀 */
-#work {
-  background-color: var(--color-white);
-}
-
+/* work */
 
 .work__categories {
   margin: 40px;
@@ -540,16 +433,12 @@ table {
 } 
 
 
-
 /* Testimonial */
 
+/* 여기에서 하는 그 짝수, 홀수랑, 사진 외쪽 오른쪽
+바꾸는 거는 하지 않았다, 나중에 필요하면 강의 찾아보고 하도록 */
 #testimoials {
-  /* background-color: var(--color-light-white); */
-  /* 눈오는 효과 주려면 배경이 나오게 해야해서 테스트모니얼 쪽 배경을 날려버렸음, 나중에 눈오는 효과 삭제할 때 위에게 주석 해제해야함 */
-}
-
-.major__title {
-  color: var(--color-black);
+  background-color: var(--color-light-white);
 }
 
 .testimonials {
@@ -562,17 +451,14 @@ table {
 }
 
 .testimonial__avata {
-  width: auto;
-  height: auto;
-  max-width: 150px;
-  max-height: 100px;
-  /* border-radius: 50%; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin: 12px;
 }
 
 .testimonial__speech-bubble {
   padding:18px;
-  text-align: left;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
@@ -585,45 +471,10 @@ table {
   color: var(--color-pink);
 }
 
-
-/* 목표&표어 */
-#slogan {
-  background-color: var(--color-white);
-}
-
-.slogan-img-box{
-  justify-content: center;
-}
-.slogan-img{
-  width:100%;
-  /*내가 계속 사진 크기 때문에 스트레스 받았는데 이유는 간단했었음, 일단 여기에 있는 사진 자체의 크기를 설정하지 못했던 것임*/
-}
-
-/* .slogan-img {
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  background: url(image/slogan.jpg) center/cover no-repeat;
-} */
-
-
 /* Contact */
 #contact {
-  background-color: var(--color-green);
+  background-color: var(--color-pink);
 }
-
-.contact_logo1_img {
-  width:auto;
-  height: auto;
-  max-width: 350px;
-  max-height: 350px;
-  cursor: pointer;
-}
-/* .contact_logo1_img:hover {
-  transform: scale(1.1);
-  color: var(--color-yellow);
-  transition: all var(--animation-duration) ease-in;
-} */
 
 .contact__title,
 .contat__email,
@@ -640,12 +491,16 @@ color: var(--color-white);
   margin: 24px 0;
 }
 
-
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+  transition: all var(--animation-duration) ease-in;
+}
 
 
 /*누르면 홈으로 가는 화살표*/
 .arrow {
-  color: var(--color-green);
+  color: var(--color-dark-pink);
   font-size: var(--font-large);
   position: fixed;
   bottom: 5%;
@@ -684,7 +539,7 @@ color: var(--color-white);
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-green);
+    background-color: var(--color-pink);
   }
 
   #navbar.navbar--dark {
